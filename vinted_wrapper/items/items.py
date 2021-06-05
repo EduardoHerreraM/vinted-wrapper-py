@@ -30,14 +30,14 @@ class Items:
         url = f'{st.VINTED_API_URL}/{st.VINTED_PRODUCTS_ENDPOINT}'
         params = {
             'search_text': search_text,
-            'catalog_ids': ','.join(map(str, catalog_ids)),
-            'color_ids': ','.join(map(str, color_ids)),
-            'brand_ids': ','.join(map(str, brand_ids)),
-            'size_ids': ','.join(map(str, size_ids)),
-            'material_ids': ','.join(map(str, material_ids)),
-            'status_ids': ','.join(map(str, status_ids)),
-            'country_ids': ','.join(map(str, country_ids)),
-            'city_ids': ','.join(map(str, city_ids)),
+            'catalog_ids': ','.join(map(str, catalog_ids)) if catalog_ids else None,
+            'color_ids': ','.join(map(str, color_ids)) if color_ids else None,
+            'brand_ids': ','.join(map(str, brand_ids)) if brand_ids else None,
+            'size_ids': ','.join(map(str, size_ids)) if size_ids else None,
+            'material_ids': ','.join(map(str, material_ids)) if material_ids else None,
+            'status_ids': ','.join(map(str, status_ids)) if status_ids else None,
+            'country_ids': ','.join(map(str, country_ids)) if country_ids else None,
+            'city_ids': ','.join(map(str, city_ids)) if city_ids else None,
             'is_for_swap': is_for_swap,
             'page': page,
             'per_page': per_page
