@@ -11,7 +11,7 @@ README = (HERE / "README.md").read_text()
 
 # This call to setup() does all the work
 setup(
-    name='stockx-wrapper-py',
+    name='vinted-wrapper-py',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     description='Simple Vinted Api for python 3',
