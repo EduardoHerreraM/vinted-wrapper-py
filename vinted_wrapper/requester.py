@@ -36,6 +36,12 @@ class Requester:
         return data
 
     def set_cookie(self, url):
+        """
+        Perform a http get request for setting up an initial cookie. Required for Vinted.
+
+        :param url: str
+        :return: None
+        """
         self.session.get(url)
 
 
